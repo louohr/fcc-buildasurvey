@@ -1,0 +1,87 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 id="title">Gaming Survey</h1>
+  <p id="description">Thank you for taking the time to provide us with data about games.</p>
+
+  <form id="survey-form">
+    <div class="input-element">
+      <label id="name-label" for="name">Name</label>
+      <input placeholder="name" id="name" type="text" required/>
+    </div>
+    <div class="input-element">
+      <label id="email-label" for="email">Email</label>
+      <input placeholder="email" id="email" type="email" required/>
+    </div>
+    <div class="input-element">
+      <label id="number-label" for="number">Age (optional)</label>
+      <input placeholder="age" id="number" min="5" max="100" type="number" required/>
+    </div>
+
+  <fieldset>
+  <legend>Do you buy games physical (in store) or digital (e.g., Steam)?</legend>
+  <label for="physical">
+    <input id="physical" type="radio" name="buy" class="inline" value="physical" checked> Physical
+  </label>
+
+  <label for="digital">
+    <input id="digital" type="radio" name="buy" class="inline" value="digital"> Digital
+  </label>
+  </fieldset>
+
+
+    <div class="input-element">
+      <label for="dropdown">What is your favorite game genre?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">Select an option</option>
+        <option value="1">Adventure</option>
+        <option value="2">Role-playing</option>
+        <option value="3">Survival horror</option>
+        <option value="4">Strategy</option>
+        <option value="5">Other</option>
+      </select>
+    </div>
+
+    <div class="input-element">
+      <label for="enjoyment">What do you enjoy the most with games?</label>
+      <select id="enjoyment" name="enjoyment">
+        <option value="">Select an option</option>
+        <option value="1">Challenges</option>
+        <option value="2">Story</option>
+        <option value="3">Characters</option>
+        <option value="4">Playing together</option>
+      </select>
+    </div>
+
+    <div class="input-element">
+      <label>What is your favorite game? (Check all that apply)</label>
+      <div id="button-area">
+        <input type="checkbox" id="final-fantasy-vii" name="favorite-game" value="final-fantasy-vii">
+        <label for="final-fantasy-vii">Final Fantasy VII</label>
+        <input type="checkbox" id="kingdom-hearts" name="favorite-game" value="kingdom-hearts">
+        <label for="kingdom-hearts">Kingdom Hearts</label>
+        <input type="checkbox" id="civilization-vi" name="favorite-game" value="civilization-vi">
+        <label for="civilization-vi">Civilization VI</label>
+        <input type="checkbox" id="resident-evil" name="favorite-game" value="resident-evil">
+        <label for="resident-evil">Resident Evil</label>
+        <input type="checkbox" id="grand-theft-auto-v" name="favorite-game" value="grand-theft-auto-v">
+        <label for="grand-theft-auto-v">Grand Theft Auto V</label>
+      </div>
+    </div>
+
+    <div class="input-element">
+      <label for="bio">Anything you want to add?</label>
+      <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+    </div>
+    
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
